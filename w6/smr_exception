@@ -1,0 +1,10 @@
+def validate_marks(marks):
+    if marks < 0 or marks > 100:
+        raise Exception("Invalid marks! Marks should be between 0 and 100.")
+    return "Marks are valid."
+
+try:
+    marks = int(input("Enter student marks: "))
+    print(validate_marks(marks))
+except Exception as e:
+    print(str(e))

@@ -1,0 +1,5 @@
+try:
+    number = int(input("Enter a number: "))
+    print(f"Number entered is {number}")
+except ValueError:
+    print("That was not a valid number. Please enter an integer.")
