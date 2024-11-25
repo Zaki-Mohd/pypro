@@ -4,7 +4,6 @@ def validate_marks(marks):
     return "Marks are valid."
 
 try:
-    marks = int(input("Enter student marks: "))
-    print(validate_marks(marks))
+    print(validate_marks(25))
 except Exception as e:
     print(str(e))

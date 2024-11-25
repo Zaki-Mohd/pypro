@@ -15,7 +15,8 @@ def validate_email(email):
 try:
     phone = input("Enter your phone number: ")
     email = input("Enter your email address: ")
-    print(validate_phone(phone))
     print(validate_email(email))
+    print(validate_phone(phone))
+  
 except ValueError as e:
     print(e)

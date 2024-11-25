@@ -1,12 +1,15 @@
 try:
     num = int(input("Enter a number: "))
     result = 10 / num
-    print("Result:", result)
-except ZeroDivisionError:
-    print("You can't divide by zero!")
+    print(result)
+    print(res)
+except SyntaxError as e:
+    print("Syntax Error: ",e)
+except NameError as e:
+    print(e)
 except ValueError:
     print("That was not a valid number.")
 except Exception as e:
-    print(f"An unexpected error occurred: {e}")
+    print(e , "exception")
 finally:
     print("This block will always execute.")
