@@ -1,0 +1,8 @@
+def find_words_in_file(filename, words):
+    with open(filename, 'r') as file:
+        content = file.read()
+        found_words = [word for word in words if word in content]
+    print("Words found:", found_words)
+
+# Example Usage
+find_words_in_file('w8\sample.txt', ['python', 'file', 'merge'])

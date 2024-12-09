@@ -1,0 +1,8 @@
+def merge_files(file1, file2, output_file):
+    with open(file1, 'r') as f1, open(file2, 'r') as f2, open(output_file, 'w') as out:
+        out.write(f1.read())
+        out.write("\n")
+        out.write(f2.read())
+
+# Example Usage
+merge_files(r'w8\test.txt', 'w8\sample.txt', 'w8\merged.txt')
