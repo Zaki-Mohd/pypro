@@ -7,3 +7,4 @@ def distance(x1, y1, x2, y2):
     print(d)
 
 distance(2,5,6,9)
+distance(2,5,6,9)
